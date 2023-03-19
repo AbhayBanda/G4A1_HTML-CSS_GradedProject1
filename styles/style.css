@@ -8,7 +8,6 @@ body {
   height: 100%;
 }
 body {
-  overflow: auto;
   font-family: "Roboto Mono", monospace;
 }
 #header h2 {
@@ -26,6 +25,9 @@ body {
   margin-top: 0px;
   position: sticky;
   top: 0;
+  z-index: 1;
+  overflow: visible;
+  height: 3.1em;
 }
 
 .navbar a {
@@ -51,6 +53,7 @@ body {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  z-index: 1;
 }
 
 .navbar a:hover,
