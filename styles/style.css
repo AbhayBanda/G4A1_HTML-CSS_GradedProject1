@@ -25,6 +25,8 @@ body {
   background-color: #7f7f7f;
   margin: 1%;
   margin-top: 0px;
+  position: sticky;
+  top: 0;
 }
 
 .navbar a {
