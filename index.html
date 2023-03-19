@@ -9,31 +9,142 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="header">
-      <h2>Demo of Dropdown</h2>
+    <div id="header">
+      <h2>Pharmacy</h2>
     </div>
-    <div class="nav-bar">
-      <ul>
-        <li>
-          <a href="#">Link 1</a>
-        </li>
-        <li>
-          <a href="#">Link 2</a>
-          <ul id="nav-dropdown">
-            <li>DD_link_1</li>
-            <li>DD_link_2</li>
-            <li>DD_link_3</li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Link 3</a>
-        </li>
-      </ul>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Our Medicines</button>
+        <div class="dropdown-content">
+          <a href="#">Fever</a>
+          <a href="#">Muscle Pain</a>
+          <a href="#">Cold and Cough</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Health Care</button>
+        <div class="dropdown-content">
+          <a href="#">Baby Care</a>
+          <a href="#">Skin Care</a>
+          <a href="#">Home Care</a>
+          <a href="#">Personal Care</a>
+          <a href="#">Pet Care</a>
+        </div>
+      </div>
+      <a href="form.html">Lab Test</a>
     </div>
+    <div class="content">
+      <div class="animation"></div>
+      <div class="section">
+        <div id="section-1">
+          <h3 style="margin-left: 10px">Covid Care</h3>
+          <div class="card-list">
+            <div class="card">
+              <h4>Covid Test Kit</h4>
+              <img
+                src="/images/Products/c1.jpg"
+                alt="Covid Test Kit"
+                style="width: 100%"
+              />
+              <p>Rs. 40</p>
+              <p>Offer: Rs. 30/-</p>
+              <p id="card-button"><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+              <h4>Covid Essentials</h4>
+              <img
+                src="/images/Products/c2.jpg"
+                alt="Covid Essentials"
+                style="width: 100%"
+              />
+              <p>Rs. 240</p>
+              <p>Offer: Rs. 170/-</p>
+              <p id="card-button"><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+              <h4>Sanitizer Bottle</h4>
+              <img
+                src="/images/Products/c3.jpg"
+                alt="Sanitizer Bottle"
+                style="width: 100%"
+              />
+              <p>Rs. 99</p>
+              <p>Offer: Rs. 87/-</p>
+              <p id="card-button"><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+              <h4>Mask</h4>
+              <img
+                src="/images/Products/c4.jpg"
+                alt="Mask"
+                style="width: 100%"
+              />
+              <p>Rs. 45</p>
+              <p>Offer: Rs. 30/-</p>
+              <p id="card-button"><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div id="section-2">
+            <h3 style="margin-left: 10px">Diabetes Care</h3>
+            <div class="card-list">
+              <div class="card">
+                <h4>BGR-34</h4>
+                <img
+                  src="/images/Products/d1.jpg"
+                  alt="BGR-34"
+                  style="width: 100%"
+                />
+                <p>Rs. 45</p>
+                <p>Offer: Rs. 30/-</p>
+                <p id="card-button"><button>Add to Cart</button></p>
+              </div>
+              <div class="card">
+                <h4>Dabur Chawanprash</h4>
+                <img
+                  src="/images/Products/d2.jpg"
+                  alt="Dabur Chawanprash Sugarless"
+                  style="width: 100%"
+                />
+                <p>Rs. 45</p>
+                <p>Offer: Rs. 30/-</p>
+                <p id="card-button"><button>Add to Cart</button></p>
+              </div>
+              <div class="card">
+                <h4>Diabetic Toothpaste</h4>
+                <img
+                  src="/images/Products/d3.jpg"
+                  alt="Colgate Diabetic Toothpaste"
+                  style="width: 100%"
+                />
+                <p>Rs. 45</p>
+                <p>Offer: Rs. 30/-</p>
+                <p id="card-button"><button>Add to Cart</button></p>
+              </div>
+              <div class="card">
+                <h4>UNIBIC Cookies</h4>
+                <img
+                  src="/images/Products/d4.png"
+                  alt="UNIBIC Butter Cookies"
+                  style="width: 100%"
+                />
+                <p>Rs. 35</p>
+                <p>Offer: Rs. 30/-</p>
+                <p id="card-button"><button>Add to Cart</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>@copyright. Only for demonstration purposes</p>
+    </footer>
   </body>
 </html>

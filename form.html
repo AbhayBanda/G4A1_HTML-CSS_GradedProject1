@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pharmacy</title>
+  </head>
+  <body style="overflow: hidden">
+    <div class="form">
+      <form action="/index.html">
+        <img class="img-style" src="/images/Lab-Test/lab-test.jpg" alt="Mask" />
+        <div
+          class="form-elements"
+          style="height: 30em; margin-left: 10px; width: 40%"
+        >
+          <h2>1. Your Contact details</h2>
+          <input type="text" id="fname" name="fname" placeholder="Full Name" />
+          <input
+            type="text"
+            id="parentid"
+            name="parentid"
+            placeholder="Patient Id if exists"
+          /><br /><br />
+          <input
+            type="text"
+            id="contact"
+            name="contact"
+            placeholder="Contact Number"
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Id"
+          /><br /><br />
+          <h2>2. Address</h2>
+          <input type="text" id="fname" name="fname" placeholder="H-No." />
+          <input
+            type="text"
+            id="street"
+            name="street"
+            placeholder="Street"
+          /><br /><br />
+          <input type="text" id="fname" name="fname" placeholder="Area" /><br />
+          <h3>District</h3>
+          <select
+            name="districts"
+            id="districts"
+            style="padding: 10px 20px; background-color: white"
+          >
+            <option value="choose" selected>Choose</option>
+            <option value="hyd">Hyderabad</option>
+            <option value="mdl">Medchal</option>
+            <option value="rr">Ranga Reddy</option>
+            <option value="nzm">Nizamabad</option></select
+          ><br /><br />
+          <h2 style="margin: 0px">
+            3. Test Type
+            <span style="font-size: xx-small; color: red">
+              (*Check atleast one box without fail)</span
+            >
+          </h2>
+          <br />
+          <input type="checkbox" id="test1" name="test1" value="cbc" />
+          <label for="cbc">CBC</label><br />
+          <input
+            type="checkbox"
+            id="test2"
+            name="test2"
+            value="complete urine"
+          />
+          <label for="test2">Complete Urine</label><br />
+          <input
+            type="checkbox"
+            id="test3"
+            name="test3"
+            value="Lipid Profile"
+          />
+          <label for="test3">Lipid Profile</label><br />
+          <input type="checkbox" id="test4" name="test4" value="THS" />
+          <label for="test4">Thyroid Stimulating Hormone(TSH)</label><br />
+          <input type="checkbox" id="test5" name="test5" value="GLucose test" />
+          <label for="test5">Glucose Test</label><br />
+
+          <div id="wrapper">
+            <h2>4. Do you want hard copy of the report?</h2>
+            <p><input type="radio" name="yes_no" value="yes" checked /> Yes</p>
+            <p><input type="radio" value="no" name="yes_no" /> No</p>
+          </div>
+          <h2>5. Choose a time for your appointment:</h2>
+          <input
+            type="datetime-local"
+            id="meeting-time"
+            name="meeting-time"
+            value="2023-03-19T10:00"
+            min="2023-03-19T10:00"
+          /><br /><br />
+        </div>
+        <div class="form-button">
+          <button id="button-1" type="reset">Reset</button>
+          <button id="button-2" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
